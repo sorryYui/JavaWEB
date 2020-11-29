@@ -2,5 +2,7 @@
 WebRoot →Web应用所在目录，一般情况下虚拟目录要配置到此文件夹当中。
 　　　  ┝WEB-INF：此文件夹必须位于WebRoot文件夹里面，而且必须以这样的形式去命名，字母都要大写。
 　　　　　　┝web.xml：配置文件，有格式要求，此文件必须以这样的形式去命名，并且必须放置到WEB-INF文件夹中。
+           |-lib目录:java的jar包
+           |-classes：java类
 web.xml的格式可以直接从Tomcat中参考得到：
 找到Tomcat目录下的webapps\ROOT\WEB-INF这个目录下的web.xml文件，把这个文件拷贝到我们新建的WEB-INF文件夹中，并修改这个web.xml文件，把里面的注释删除掉，
