@@ -3,4 +3,8 @@ Web应用开发好后，若想供外界访问，需要把web应用所在目录�
   在<Host></Host>中添加<Context path= 虚拟目录 docBase= 文件绝对路径名>；
   作用是在服务器端应用映射到虚拟目录上，虚拟目录是由Tomcat服务器管理的，
   是一个硬盘上不存在的目录，是我们自己随便写的一个目录，也就是虚拟的一个目录，所以称之为"虚拟目录"
-2.
+2.tomcat服务器自动映射
+  tomcat服务器会自动管理webapps目录下的所有web应用，并把它映射成虚似目录。换句话说，tomcat服务器webapps目录中的web应用，外界可以直接访问。
+
+3.在tomcat服务器的\conf\Catalina\localhost目录下添加一个以xml作为扩展名的文件。
+  context元素的path属性源自于是这个xml文件的名字，Context元素的path属性是用来配置虚似目录的名称的，所以虚似目录的名称就是这个xml文件的名称。
