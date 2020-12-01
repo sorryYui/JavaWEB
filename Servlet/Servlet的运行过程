@@ -1,0 +1,8 @@
+Servlet程序是由WEB服务器调用，web服务器收到客户端的Servlet访问请求后：
+  1.Web服务器首先检查是否已经装载并创建了该Servlet的实例对象。如果是，则执行4，否，则执行2.
+  2.装载并创建该Servlet的一个实例对象。
+  3.调用Servlet实例对象的init()方法。
+  4.创建一个用于封装HTTP请求消息的HttpServletRequest对象和一个代表HTTP响应消息的HttpServletResponse对象，
+    然后调用Servlet的service()方法并将请求和响应对象作为参数传递进去。
+  5.WEB应用程序被停止或重新启动之前，Servlet引擎将卸载Servlet，并在卸载之前调用Servlet的destroy()方法。
+  
