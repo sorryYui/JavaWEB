@@ -1,0 +1,11 @@
+Servlet调用步骤：
+  1.连接web服务器
+  2.发送http请求
+  3.解析客户机访问的主机
+  4.解析客户机访问的web应用
+  5.解析客户机访问的web资源
+  6.如果发现servlet是第一次访问，服务器就会加载servlet类并创建servlet对象。
+  7.调用servlet.init()方法
+  8.调用servlet.service()方法
+  9.service()方法执行，将数据写入response中。
+  10.web服务器取出response数据回送至浏览器中。
