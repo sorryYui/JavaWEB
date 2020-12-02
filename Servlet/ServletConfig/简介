@@ -1,0 +1,2 @@
+1.配置Servlet初始化参数。
+  在Servlet的配置文件web.xml中，可以使用一个或多个<init-param>标签为servlet配置一些初始化参数。
