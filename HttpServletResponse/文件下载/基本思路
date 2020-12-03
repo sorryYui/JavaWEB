@@ -1,0 +1,8 @@
+1.获取要下载的文件的绝对路径
+2.获取要下载的文件名
+3.设置content-disposition响应头控制浏览器以下载的形式打开文件
+4.获取要下载的文件输入流
+5.创建数据缓冲区
+6.通过response对象获取OutputStream流
+7.将FileInputStream流写入到buffer缓冲区
+8.使用OutputStream将缓冲区的数据输出到客户端浏览器
