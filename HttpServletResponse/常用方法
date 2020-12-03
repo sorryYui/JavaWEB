@@ -3,9 +3,12 @@
   2.PrintWriter getWriter() -- 获得字符流
 2.负责向客户端(浏览器)发送响应头的相关方法(响应头)
   1.void addDateHeader(String name,long date) -- 加入对应名称的日期头信息
-  2.void addHeader(String name,String value) -- 添加一个已初始化名字和内容的消息头。
-  3.void addIntHeader(String name,int value) -- 添加一个已初始化名字和整数的消息头。
+  2.void addHeader(String name,String value) -- 加入对应名称的内容头信息
+  3.void addIntHeader(String name,int value) -- 加入对应名称的整数头信息
   4.boolean containHeader(String name, int value) -- 查找是否包含一个已给名字和整数的消息头。
   5.void setDateHeader(String name,long date) -- 用所给的名字和时间设置一个消息头。
+  6.void setHeader(String name,String value) -- 设置对应名称的内容头信息。
+  7.void setIntHeader(String name,int value) -- 设置对应名称的整数头信息。
+  8.void setStauts(int stauts) -- 设置响应状态码。
   
   
