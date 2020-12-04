@@ -1,0 +1,9 @@
+1.String getRequestURL()---返回客户端发出请求时的完整URL。
+2.String getRequestURI()---返回请求行中的资源名部分。
+3.String getQueryString()---返回请求行中的参数部分。
+4.String getPathInfo()---返回请求URL中的额外路径信息。额外路径信息是请求URL中的位于Servlet的路径之后和查询参数之前的内容，它以“/”开头。
+5.String getRemoteAddr()---返回发出请求的客户机的IP地址。
+6.String getRemoteHost()---返回发出请求的客户机的完整主机名。
+7.String getRemotePort()---返回客户机所使用的网络端口号。
+8.String getLocalAddr()---返回WEB服务器的IP地址。
+9.String getLocalName()---返回WEB服务器的主机名。
