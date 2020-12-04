@@ -1,0 +1,3 @@
+请求重定向指：一个web资源收到客户端请求后，通知客户端去访问另外一个web资源，这称之为请求重定向。
+实现方式：response.sendRedirect(String location)，即调用response对象的sendRedirect方法实现请求重定向
+sendRedirect内部的实现原理：使用response设置302状态码和设置location响应头实现重定向
