@@ -1,0 +1,2 @@
+1.RequestDispaatcher getRequestDispatcher(String path)-----返回一个RequestDispatcher对象，调用这个对象的forward方法可以实现请求转发.(ServletContext类)
+2.RequestDispaatcher getRequestDispatcher(String path)-----返回一个RequestDispatcher对象，调用这个对象的forward方法可以实现请求转发.(HttpServletRequest类)
