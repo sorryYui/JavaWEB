@@ -1,0 +1,3 @@
+String getHeader(String name);
+Enumeration getHeaders(String name);
+Enumeration getHeaderName();
