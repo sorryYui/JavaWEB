@@ -1,0 +1,7 @@
+session对象默认30分钟没有使用，则服务器会自动销毁session，在web.xml文件中可以手工配置session的失效时间
+如：
+ <session-config>
+        <session-timeout>15</session-timeout>
+ </session-config>
+ ----以分钟为单位。
+ 当需要在程序中手动设置Session失效时，可以手工调用session.invalidate方法，摧毁session。
