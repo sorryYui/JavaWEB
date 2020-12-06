@@ -1,0 +1,2 @@
+服务器创建session出来后，会把session的id号，以cookie的形式回写给客户机，这样，只要客户机的浏览器不关，再去访问服务器时，都会带着session的id号去，
+服务器发现客户机浏览器带session id过来了，就会使用内存中与之对应的session为之服务。
