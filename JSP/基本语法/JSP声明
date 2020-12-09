@@ -1,0 +1,8 @@
+　JSP页面中编写的所有代码，默认会翻译到servlet的service方法中， 而Jsp声明中的java代码被翻译到_jspService方法的外面。
+ 语法：
+        <%！
+    　　　　java代码
+　　　　%>
+所以，JSP声明可用于定义JSP页面转换成的Servlet程序的静态代码块、成员变量和方法 。
+多个静态代码块、变量和函数可以定义在一个JSP声明中，也可以分别单独定义在多个JSP声明中。
+JSP隐式对象的作用范围仅限于Servlet的_jspService方法，所以在JSP声明中不能使用这些隐式对象。
