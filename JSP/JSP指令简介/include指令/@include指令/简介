@@ -1,0 +1,7 @@
+@include可以包含任意的文件，当然，只是把文件的内容包含进来。
+include指令用于引入其它JSP页面，如果使用include指令引入了其它JSP页面，那么JSP引擎将把这两个JSP翻译成一个servlet。所以include指令引入通常也称之为静态引入。
+语法：<%@ include file="relativeURL"%>，其中的file属性用于指定被引入文件的路径。路径以“/”开头，表示代表当前web应用。
+include指令细节注意问题：
+  1.被引入的文件必须遵循JSP语法。
+  2.被引入的文件可以使用任意的扩展名，
+  3.由于使用include指令将会涉及到2个JSP页面，并会把2个JSP翻译成一个servlet，所以这2个JSP页面的指令不能冲突。
