@@ -1,0 +1,17 @@
+page指令用于定义JSP页面的各种属性，无论page指令出现在JSP页面中的什么地方，它作用的都是整个JSP页面，
+为了保持程序的可读性和遵循良好的编程习惯，page指令最好是放在整个JSP页面的起始位置。
+2.1 page指令的import属性
+  在Jsp页面中，Jsp引擎会自动导入下面的包：
+  java.lang.*
+  javax.servlet.*
+  javax.servlet.jsp.*
+  javax.servlet.http.*
+可以在一条page指令的import属性中引入多个类或包，其中的每个包或类之间使用逗号(,)分隔。
+2.2 page指令的errorPage属性
+errorPage属性的设置值必须使用相对路径，如果以“/”开头，表示相对于当前Web应用程序的根目录(注意不是站点根目录)，否则，表示相对于当前页面
+可以在web.xml文件中使用<error-page>元素为整个Web应用程序设置错误处理页面。
+<error-page>元素有3个子元素，<error-code>、<exception-type>、<location>。
+<error-code>子元素指定错误的状态码，例如：<error-code>404</error-code>。
+<exception-type>子元素指定异常类的完全限定名，例如：<exception-type>java.lang.ArithmeticException</exception-type>
+<location>子元素指定以“/”开头的错误处理页面的路径，例如：<location>/ErrorPage/404Error.jsp</location>
+如果设置了某个JSP页面的errorPage属性，那么在web.xml文件中设置的错误处理将不对该页面起作用。
