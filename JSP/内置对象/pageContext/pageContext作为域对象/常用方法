@@ -1,0 +1,4 @@
+public void setAttribute(String name,Object value)-----设置对应名字的值。
+public Object getAttribute(String name)-----获得对应名字的值。
+public void removeAttribute(String name)-----删除对应名字的值。
+public Objetc findAttribute(String name)-----寻找对应名字的值。
