@@ -1,0 +1,8 @@
+1.getException方法返回exception隐式对象
+2.getPage方法返回page隐式对象
+3.getRequest方法返回request隐式对象
+4.getResponse方法返回response隐式对象
+5.getServletConfig方法返回config隐式对象
+6.getServletContext方法返回application隐式对象
+7.getSession方法返回session隐式对象
+8.getOut方法返回out隐式对象
