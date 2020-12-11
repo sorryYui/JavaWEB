@@ -1,0 +1,2 @@
+PageContext类中定义了一个forward方法(用来跳转页面)和两个include方法(用来引入页面)来分别简化和替代RequestDispatcher.forward方法和include方法。
+方法接收的资源如果以“/”开头， “/”代表当前web应用。
