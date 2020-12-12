@@ -1,0 +1,8 @@
+PageContext类继承了JspContext类，在JspContext类中定义了setAttribute方法.
+public abstract void setArrtibute(String name,Object value,int scope)
+此方法中存在一个scope的整型变量，此变量就表示一个属性的保存范围。
+PageContext类继承了JspContext类，所以在PageContext类中实现了抽象的setAttribute方法：
+  1.PAGE_SCOPE-----pageContext
+  2.REQUEST_SCOPE-----request
+  3.SESSION_SCOPE-----session
+  4.APPLICATION_SCOPE-----application
