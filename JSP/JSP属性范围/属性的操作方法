@@ -1,0 +1,3 @@
+1.public void setAttribute(String name,Object value)-----设置对应名字的属性的值(设置属性)
+2.public Object getAttribute(String name)-----获得对应名字的属性的值(获得属性)
+3.public void removeAtttibute(String name)-----删除属性
