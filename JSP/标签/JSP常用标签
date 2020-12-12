@@ -1,0 +1,4 @@
+jsp的常用标签有以下三个
+  1.<jsp:include>标签
+  2.<jsp:forward>标签  
+  3.<jsp:param>标签
