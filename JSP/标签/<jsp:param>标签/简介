@@ -1,0 +1,10 @@
+当使用<jsp:include>和<jsp:forward>标签引入或将请求转发给其它资源时，可以使用<jsp:param>标签向这个资源传递参数。
+语法1：
+    <jsp:include page="relativeURL | <%=expression%>">
+      <jsp:param name="parameterName" value="parameterValue|<%= expression %>" />
+     </jsp:include>
+语法2：
+    <jsp:forward page="relativeURL | <%=expression%>">
+       <jsp:param name="parameterName" value="parameterValue|<%= expression %>" />
+     </jsp:include>
+<jsp:param>标签的name属性用于指定参数名，value属性用于指定参数值。在<jsp:include>和<jsp:forward>标签中可以使用多个<jsp:param>标签来传递多个参数。
