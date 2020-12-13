@@ -1,0 +1,4 @@
+<jsp:forward>标签用于把请求转发给另外一个资源。
+语法：
+  <jsp:forward page="relativeURL | <%=expression%>" />
+  page属性用于指定请求转发到的资源的相对路径，它也可以通过执行一个表达式来获得。
