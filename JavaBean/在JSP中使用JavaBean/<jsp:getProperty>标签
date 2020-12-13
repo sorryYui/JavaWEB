@@ -1,0 +1,6 @@
+<jsp:getProperty>标签用于读取JavaBean对象的属性，也就是调用JavaBean对象的getter方法，然后将读取的属性值转换成字符串后插入进输出的响应正文中。
+语法：
+  <jsp:getProperty name="beanInstanceName" property="PropertyName" />
+  name属性用于指定JavaBean实例对象的名称，其值应与<jsp:useBean>标签的id属性值相同。
+  property属性用于指定JavaBean实例对象的属性名。
+如果一个JavaBean实例对象的某个属性的值为null，那么，使用<jsp:getProperty>标签输出该属性的结果将是一个内容为“null”的字符串。
