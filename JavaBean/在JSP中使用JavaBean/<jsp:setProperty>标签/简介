@@ -1,0 +1,11 @@
+<jsp:setProperty>标签用于设置和访问JavaBean对象的属性。
+语法：
+  1.<jsp:setProperty name="beanName" property="propertyName" value="string字符串"/>
+  2.<jsp:setProperty name="beanName" property="propertyName" value="<%= expression %>" />
+  3.<jsp:setProperty name="beanName" property="propertyName" param="parameterName"/>
+  4.<jsp:setProperty name="beanName" property= "*" />
+  name属性用于指定JavaBean对象的名称。
+  property属性用于指定JavaBean实例对象的属性名。
+  value属性用于指定JavaBean对象的某个属性的值，value的值可以是字符串，也可以是表达式。为字符串时，该值会自动转化为JavaBean属性相应的类型，
+    如果value的值是一个表达式，那么该表达式的计算结果必须与所要设置的JavaBean属性的类型一致。  
+  param属性用于将JavaBean实例对象的某个属性值设置为一个请求参数值，该属性值同样会自动转换成要设置的JavaBean属性的类型。
