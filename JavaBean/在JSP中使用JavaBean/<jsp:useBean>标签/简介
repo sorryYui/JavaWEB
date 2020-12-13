@@ -1,0 +1,7 @@
+<jsp:useBean>标签用于在指定的域范围内查找指定名称的JavaBean对象，如果存在则直接返回该JavaBean对象的引用，
+如果不存在则实例化一个新的JavaBean对象并将它以指定的名称存储到指定的域范围中。
+语法：
+  <jsp:useBean id="beanName" class="package.class" scope="page|request|session|application"/>
+  "id"属性用于指定JavaBean实例对象的引用名称和其存储在域范围中的名称。
+  "class"属性用于指定JavaBean的完整类名（即必须带有包名）。
+  "scope"属性用于指定JavaBean实例对象所存储的域范围，其取值只能是page、request、session和application等四个值中的一个，其默认值是page。
