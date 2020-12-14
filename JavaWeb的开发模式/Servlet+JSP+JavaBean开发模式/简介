@@ -1,0 +1,2 @@
+在平时的JavaWeb项目开发中，在不使用第三方mvc开发框架的情况下，通常会选择Servlet+JSP+JavaBean开发模式来开发JavaWeb项目，
+Servlet+JSP+JavaBean组合开发就是一种MVC开发模式了，控制器(Controller)采用Servlet、模型(Model)采用JavaBean、视图(View)采用JSP。
