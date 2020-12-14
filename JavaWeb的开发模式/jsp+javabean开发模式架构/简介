@@ -1,0 +1,2 @@
+在jsp+javabean架构中，JSP负责控制逻辑、表现逻辑、业务对象（javabean）的调用。
+JSP+JavaBean模式适合开发业务逻辑不太复杂的web应用程序，这种模式下，JavaBean用于封装业务数据，JSP即负责处理用户请求，又显示数据。
