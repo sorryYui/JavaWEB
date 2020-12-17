@@ -1,0 +1,5 @@
+javax.servlet.jsp.tagext.JspFragment类是在JSP2.0中定义的，它的实例对象代表JSP页面中的一段符合JSP语法规范的JSP片段，这段JSP片段中不能包含JSP脚本元素
+WEB容器在处理简单标签的标签体时，会把标签体内容用一个JspFragment对象表示，并调用标签处理器对象的setJspBody方法把JspFragment对象传递给标签处理器对象。
+JspFragment类中只定义了两个方法：
+  1. public JspContxet getJspContext()-----用于返回代表调用页面的JspContext对象。
+  2.public abstract void invoke(Write write)-----用于执行JspFragment对象所代表的JSP代码片段，参数out用于指定将JspFragment对象的执行结果写入到哪个输出流对象中。
