@@ -1,0 +1,11 @@
+1.setJspContext方法
+  用于把JSP页面的pageContext对象传递给标签处理器对象。
+2.setParent方法
+  用于把父标签处理器对象传递给当前标签处理器对象
+3.getParent方法
+  用于获得当前标签的父标签处理器对象
+4.setJspBody方法
+  用于把代表标签体的JspFragment对象传递给标签处理器对象
+5.doTag方法
+  用于完成所有的标签逻辑，包括输出、迭代、修改标签体内容等。
+  在doTag方法中可以抛出javax.servlet.jsp.SkipPageException异常，用于通知WEB容器不再执行JSP页面中位于结束标记后面的内容，这等效于在传统标签的doEndTag方法中返回Tag.SKIP_PAGE常量的情况。
