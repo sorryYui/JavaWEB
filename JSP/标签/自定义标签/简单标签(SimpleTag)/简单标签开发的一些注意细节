@@ -1,0 +1,8 @@
+1.标签类编写细节
+  开发标签类时，不要直接去实现SimpleTag接口，而是应该继承SimpleTagSupport类，SimpleTagSupport类是SimpleTag接口的一个默认实现类，通过继承SimpleTagSupport类，
+  就可以直接使用SimpleTagSupport类已经实现的那些方法，如果SimpleTagSupport类的方法实现不满足业务要求，那么就可以根据具体的业务情况将相应的方法进行重写。
+2.tld文件中标签体类型设置细节
+  开发好一个标签后，在tld文件中使用<tag>来描述一个标签，描述的内容包括标签名(name)，标签处理器类(tag-class)，标签体的内容(body-content)。
+  tld文件中有四种标签体(body-content)类型 ：empty、JSP、scriptless、tagdependent 
+  在简单标签(SampleTag)中标签体body-content的值只允许是empty、scriptless、tagdependent，不允许设置成JSP,如果设置成JSP就会出现异常：
+  body-content的值如果设置成empty，那么就表示该标签没有标签体，如果是设置成scriptless，那么表示该标签是有标签体的，但是标签体中的内容不可以是<%java代码%>
