@@ -1,0 +1,3 @@
+value : 支持EL表达式，类型是Object,功能是描述要输出的内容。
+escapeXml:支持EL表达式，类型是Boolean,功能是将特殊字符转码。
+default:支持EL表达式，类型是Object,功能是当value = null时指定输出的内容。
