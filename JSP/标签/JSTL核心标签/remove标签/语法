@@ -1,0 +1,2 @@
+<c:remove var=”变量名” [scope=”page|request|session|application”]/>
+其中var属性是必须的，scope可以以省略。
