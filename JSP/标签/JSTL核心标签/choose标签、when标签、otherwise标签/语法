@@ -1,0 +1,14 @@
+<c:choose>
+         <c:when test="条件1">
+　　　　　　//业务逻辑1
+         <c:when>
+　　　<c:when test="条件2">
+　　　　　　//业务逻辑2
+         <c:when>
+　　　<c:when test="条件n">
+　　　　　　//业务逻辑n
+         <c:when>
+         <c:otherwise>
+　　　　　　//业务逻辑
+　　　</c:otherwise>
+　</c:choose>
