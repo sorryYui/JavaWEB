@@ -1,0 +1,14 @@
+<c:set>标签的编写共有4种语法格式。
+1.存值，把一个值放在指定的域范围内。
+  <c:set value=”值1” var=”name1” [scope=”page|request|session|application”]/>
+  　含义：把一个变量名为name1,值为“值1”的变量存储在指定的scope范围内。
+2.<c:set var=”name2” [scope=”page|request|session|application”]>
+    　值2
+  </c:set>
+  含义：把一个变量名为name2，值为值2的变量存储在指定的scope范围内。
+3.<c:set value=”值3” target=”JavaBean对象” property=”属性名”/>
+  含义：把一个值为“值3”赋值给指定的JavaBean的属性名。相当与setter()方法。
+4.<c:set target=”JavaBean对象” property=”属性名”>
+    值4
+  </c:set>
+  含义：把一个值4赋值给指定的JavaBean的属性名。
