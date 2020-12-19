@@ -1,0 +1,2 @@
+其语法格式如下：<c:catch [var="varName"]>容易产生异常的代码</c:catch>
+var属性用于标识<c:catch>标签捕获的异常对象，它将保存在page这个Web域中。
