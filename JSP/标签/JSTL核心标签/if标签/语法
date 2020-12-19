@@ -1,0 +1,10 @@
+1.没有标签体内容(body)
+  <c:if test="testCondition" var="varName" [scope="{page|request|session|application}"]/>
+2.有标签体内容
+  <c:if test="testCondition" [var="varName"] [scope="{page|request|session|application}"]>
+    标签体内容
+  </c:if>
+参数说明:
+  1.test属性用于存放判断的条件，一般使用EL表达式来编写。
+  2.var属性用来存放判断的结果，类型为true或false。
+  3.scopes属性用来指定var属性存放的范围。
