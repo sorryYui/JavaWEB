@@ -1,0 +1,4 @@
+<c:out>标签的使用有两种语法格式：
+  1.<c:out value=”要显示的数据对象” [escapeXml=”true|false”] [default=”默认值”]/>
+  2.<c:out value=”要显示的数据对象” [escapeXml=”true|false”]>默认值</c:out>
+这两种方式没有本质的区别，只是格式上的差别。[escapeXml=”true|false”] [default=”默认值”]这些使用[]属性表示是不是必须的。
