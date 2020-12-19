@@ -1,0 +1,7 @@
+JSTL的核心标签库标签共13个，使用这些标签能够完成JSP页面的基本功能。
+从功能上可以分为4类：表达式控制标签、流程控制标签、循环标签、URL操作标签。
+1.表达式控制标签：out标签、set标签、remove标签、catch标签。
+2.流程控制标签：if标签、choose标签、when标签、otherwise标签。
+3.循环标签：forEach标签、forTokens标签。
+4.URL操作标签：import标签、url标签、redirect标签、param标签。
+在JSP页面引入核心标签库的代码为：<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
