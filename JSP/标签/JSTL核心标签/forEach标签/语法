@@ -1,0 +1,15 @@
+<c:forEach
+    　　var=”name”
+    　　items=”Collection”
+    　　varStatus=”StatusName”
+    　　begin=”begin”
+    　　end=”end”
+    　　step=”step”>
+    本体内容
+</c:forEach>
+参数解析
+  1.var设定变量名用于存储从集合中取出元素。
+  2.items指定要遍历的集合。
+  3.varStatus设定变量名，该变量用于存放集合中元素的信息。
+  4.begin、end用于指定遍历的起始位置和终止位置（可选）
+  5.step指定循环的步长。
