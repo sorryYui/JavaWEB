@@ -1,0 +1,14 @@
+语法1：指定一个url不做修改，可以选择把该url存储在JSP不同的范围中。
+  <c:url
+    value=”value”
+    [var=”name”]
+    [scope=”page|request|session|application”]
+    [context=”context”]/>
+语法2：配合 <c:param>标签给url加上指定参数及参数值，可以选择以name存储该url。
+  <c:url
+    value=”value”
+    [var=”name”]
+    [scope=”page|request|session|application”]
+    [context=”context”]>
+    　　<c:param name=”参数名” value=”值”>
+</c:url>
