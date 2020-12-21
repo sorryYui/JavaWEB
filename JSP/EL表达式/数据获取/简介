@@ -1,0 +1,4 @@
+  使用EL表达式获取数据语法："${标识符}"
+  EL表达式语句在执行时，会调用pageContext.findAttribute方法，用标识符为关键字，分别从page、request、session、application四个域中查找相应的对象，找到则返回相应对象，找不到则返回
+（注意，不是null，而是空字符串）。
+  EL表达式可以很轻松获取JavaBean的属性，或获取数组、Collection、Map类型集合的数据。
