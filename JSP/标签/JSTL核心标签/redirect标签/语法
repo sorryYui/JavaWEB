@@ -1,0 +1,9 @@
+语法1：
+  <c:redirect url=”url” [context=”context”]/>
+语法2：
+  <c:redirect url=”url”[context=”context”]>
+    <c:param name=”name1” value=”value1”>
+</c:redirect>
+参数说明：
+  url指定重定向页面的地址，可以是一个string类型的绝对地址或相对地址。
+  context用于导入其他web应用中的页面。
