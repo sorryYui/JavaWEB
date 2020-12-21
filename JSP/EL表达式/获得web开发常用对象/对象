@@ -1,0 +1,11 @@
+1.pageContext-----对应jsp的pageContext对象。
+2.pageScope-----对应jsp的page域
+3.requestScope-----对应jsp的request域
+4.sessionScope-----对应jsp的session域
+5.applicationScope----对应jsp的application域
+6.param-----对应jsp保存了所有请求参数的Map对象
+7.paramValue-----对应所有请求参数的值。
+8.header-----对应http消息头。
+9.headrValue-----对应http各种消息头的值。
+10.cookie-----所有cookie对象。
+11.initParam-----所有初始化请求参数。
