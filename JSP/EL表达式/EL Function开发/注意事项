@@ -1,0 +1,6 @@
+编写完标签库描述文件后，需要将它放置到<web应用>\WEB-INF目录中或WEB-INF目录下的除了classes和lib目录之外的任意子目录中。
+TLD文件中的<uri> 元素用指定该TLD文件的URI，在JSP文件中需要通过这个URI来引入该标签库描述文件。
+<function>元素用于描述一个EL自定义函数，其中：
+  1.<name>子元素用于指定EL自定义函数的名称。
+  2.<function-class>子元素用于指定完整的Java类名，
+  3.<function-signature>子元素用于指定Java类中的静态方法的签名，方法签名必须指明方法的返回值类型及各个参数的类型，各个参数之间用逗号分隔。
