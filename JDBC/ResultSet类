@@ -1,0 +1,15 @@
+  Jdbc程序中的ResultSet用于代表Sql语句的执行结果。Resultset封装执行结果时，采用的类似于表格的方式。
+ResultSet 对象维护了一个指向表格数据行的游标，初始的时候，游标在第一行之前，调用ResultSet.next() 方法，可以使游标指向具体的数据行，进行调用方法获取该行的数据。
+  ResultSet既然用于封装执行结果的，所以该对象提供的都是用于获取数据的get方法：
+    1.获取任意类型的数据
+      1.public Object getObject(int index)
+      2.public Object getObject(string columnName)
+    2.获取指定类型的数据,如String
+      1.public String getString(int index);
+      2.public String getString(String columnName);
+ResultSet还提供了对结果集进行滚动的方法：
+  1.next()：移动到下一行
+  2.Previous()：移动到前一行
+  3.absolute(int row)：移动到指定行
+  4.beforeFirst()：移动resultSet的最前面。
+  5.afterLast() ：移动到resultSet的最后面。
