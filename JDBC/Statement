@@ -1,0 +1,6 @@
+Jdbc程序中的Statement对象用于向数据库发送SQL语句， Statement对象常用方法：
+  1.executeQuery(String sql) ：用于向数据发送查询语句。
+  2.executeUpdate(String sql)：用于向数据库发送insert、update或delete语句
+  3.execute(String sql)：用于向数据库发送任意sql语句
+  4.addBatch(String sql) ：把多条sql语句放到一个批处理中。
+  5.executeBatch()：向数据库发送一批sql语句执行。
