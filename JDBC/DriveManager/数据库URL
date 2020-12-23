@@ -1,0 +1,5 @@
+URL用于标识数据库的位置，通过URL地址告诉JDBC程序连接哪个数据库。
+常用数据库URL地址的写法：
+  1.Oracle写法：jdbc:oracle:thin:@localhost:1521:sid
+  2.SqlServer写法：jdbc:microsoft:sqlserver://localhost:1433; DatabaseName=sid
+  3.MySql写法：jdbc:mysql://localhost:3306/sid
