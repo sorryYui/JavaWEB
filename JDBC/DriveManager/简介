@@ -1,0 +1,8 @@
+Jdbc程序中的DriverManager用于加载驱动，并创建与数据库的链接，这个API的常用方法：
+  1.DriverManager.registerDriver(new Driver())；
+  2.DriverManager.getConnection(url, user, password)，
+  注意：在实际开发中并不推荐采用registerDriver方法注册驱动。原因有二：
+    1.查看Driver的源代码可以看到，如果采用此种方式，会导致驱动程序注册两次，也就是在内存中会有两个Driver对象。
+    2.程序依赖mysql的api，脱离mysql的jar包，程序将无法编译，将来程序切换底层数据库将会非常麻烦。
+推荐方式：Class.forName("com.mysql.jdbc.Driver");
+采用此种方式不会导致驱动对象在内存中重复出现，并且采用此种方式，程序仅仅只需要一个字符串，不需要依赖具体的驱动，使程序的灵活性更高。
