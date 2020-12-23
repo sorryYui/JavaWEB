@@ -1,0 +1,7 @@
+Jdbc程序中的Connection，它用于代表数据库的链接，客户端与数据库所有交互都是通过connection对象完成的，这个对象的常用方法：
+  1.createStatement()：创建向数据库发送sql的statement对象。
+  2.prepareStatement(sql) ：创建向数据库发送预编译sql的PrepareSatement对象。
+  3.prepareCall(sql)：创建执行存储过程的callableStatement对象。
+  4.setAutoCommit(boolean autoCommit)：设置事务是否自动提交。
+  5.commit() ：在链接上提交事务。
+  6.rollback() ：在此链接上回滚事务。
