@@ -1,0 +1,6 @@
+  当Jdbc程序向数据库获得一个Connection对象时，默认情况下这个Connection对象会自动向数据库提交在它上面发送的SQL语句。
+  若想关闭这种默认提交方式，让多条SQL在一个事务中执行，可使用下列的JDBC控制事务语句
+    Connection.setAutoCommit(false);//开启事务(start transaction)
+    Connection.rollback();//回滚事务(rollback)
+    Connection.commit();//提交事务(commit)
+    
