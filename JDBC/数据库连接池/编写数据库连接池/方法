@@ -1,0 +1,7 @@
+编写连接池需实现java.sql.DataSource接口。DataSource接口中定义了两个重载的getConnection方法：
+  1.Connection getConnection();
+  2.Connection getConnection(String username, String password);
+实现DataSource接口，并实现连接池功能的步骤：
+  1.在DataSource构造函数中批量创建与数据库的连接，并把创建的连接加入LinkedList对象中。
+  2.实现getConnection方法，让getConnection方法每次调用时，从LinkedList中取一个Connection返回给用户。
+  3.当用户使用完Connection，调用Connection.close()方法时，Collection对象应保证将自己返回到LinkedList中,而不要把conn还给数据库。Collection保证将自己返回到LinkedList中是此处编程的难点。
