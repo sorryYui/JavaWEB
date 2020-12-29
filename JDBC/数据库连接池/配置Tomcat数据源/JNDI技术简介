@@ -1,0 +1,3 @@
+  JNDI(Java Naming and Directory Interface)，Java命名和目录接口，它对应于J2SE中的javax.naming包，
+  这 套API的主要作用在于：它可以把Java对象放在一个容器中（JNDI容器），并为容器中的java对象取一个名称，以后程序想获得Java对象，只需 通过名称检索即可。
+其核心API为Context，它代表JNDI容器，其lookup方法为检索容器中对应名称的对象。
