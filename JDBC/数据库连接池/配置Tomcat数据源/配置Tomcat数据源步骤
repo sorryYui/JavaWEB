@@ -1,0 +1,4 @@
+1.在Web项目的WebRoot目录下的META-INF目录创建一个context.xml文件
+2.在context.xml文件配置tomcat服务器的数据源
+3.将数据库的驱动jar文件需放置在tomcat的lib下
+4.在获取数据库连接的工具类(如jdbcUtils)的静态代码块中获取JNDI容器中的数据源
