@@ -1,6 +1,6 @@
   元数据指的是"数据库"、"表"、"列"的定义信息。
   1.DataBaseMetaData元数据
-    public DataBaseMetaData Connection.getDatabaseMetaData()------获得代表DatabaseMetaData元数据的DatabaseMetaData对象。
+    public static DataBaseMetaData Connection.getDatabaseMetaData()------获得代表DatabaseMetaData元数据的DatabaseMetaData对象。
     String getURL()------返回一个String类对象，代表数据库的URL。
     String getUserName()------返回连接当前数据库管理系统的用户名。
     String getDataProductName()------返回数据库的产品名称。
@@ -8,3 +8,12 @@
     String getDriverName()------返回驱动驱动程序的名称。
     String getDriverVersion()------返回驱动程序的版本号。
     boolean isReadOnly()------返回一个boolean值，指示数据库是否只允许读操作。
+  2.ParameterMetaData元数据
+    public static ParameterMetaData PerpareStatement.getParameterMetaData()------获得代表PreparedStatement元数据的ParameterMetaData对象。
+    ParameterMetaData对象的常用方法：
+      public int getParameterCount()------获得指定参数的个数。
+  3.ResultSetMetaData元数据
+    public static ResultSet.getMetaData()------ 获得代表ResultSet对象元数据的ResultSetMetaData对象。
+    public int ColumnCount()------返回resultset对象的列数
+    public String getColumnName(int column)------获得指定列的名称
+    public String getColumnTypeName(int column)------获得指定列的类型
