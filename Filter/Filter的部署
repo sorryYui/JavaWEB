@@ -1,0 +1,20 @@
+  1.注册Filter
+    开发好Filter之后，需要在web.xml文件中进行注册，这样才能够被web服务器调用
+      <description>用于添加描述信息，该元素的内容可为空，<description>可以不配置。
+      <filter-name>用于为过滤器指定一个名字，该元素的内容不能为空。
+      <filter-class>元素用于指定过滤器的完整的限定类名。
+      <init-param>元素用于为过滤器指定初始化参数，它的子元素<param-name>指定参数的名字，<param-value>指定参数的值。在过滤器中，可以使用FilterConfig接口对象来访问初始化参数。
+    如果过滤器不需要指定初始化参数，那么<init-param>元素可以不配置。
+  2.映射Filter
+    在web.xml文件中注册了Filter之后，还要在web.xml文件中映射Filter
+    <filter-mapping>元素用于设置一个 Filter 所负责拦截的资源。一个Filter拦截的资源可通过两种方式来指定：Servlet 名称和资源访问的请求路径
+    <filter-name>子元素用于设置filter的注册名称。该值必须是在<filter>元素中声明过的过滤器的名字
+    <url-pattern>设置 filter 所拦截的请求路径(过滤器关联的URL样式)
+    <servlet-name>指定过滤器所拦截的Servlet名称。
+    <dispatcher>指定过滤器所拦截的资源被 Servlet 容器调用的方式，可以是REQUEST,INCLUDE,FORWARD和ERROR之一，默认REQUEST。用户可以设置多个<dispatcher> 子元素用来指定 Filter 对资源的多种
+  调用方式进行拦截。
+    <dispatcher> 子元素可以设置的值及其意义：
+      REQUEST：当用户直接访问页面时，Web容器将会调用过滤器。如果目标资源是通过RequestDispatcher的include()或forward()方法访问时，那么该过滤器就不会被调用。
+      INCLUDE：如果目标资源是通过RequestDispatcher的include()方法访问时，那么该过滤器将被调用。除此之外，该过滤器不会被调用。
+      FORWARD：如果目标资源是通过RequestDispatcher的forward()方法访问时，那么该过滤器将被调用，除此之外，该过滤器不会被调用
+      ERROR：如果目标资源是通过声明式异常处理机制调用时，那么该过滤器将被调用。除此之外，过滤器不会被调用。
